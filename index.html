@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<!--set language to English-->
+<html lang="en">
+
+<!--Use Open Graph Protocol (OGP) for social medial-->
+<head prefix="og: http://ogp.me/ns#"> 
+    <title>Theme Park - Home</title>
+    <!--basic metadata e.g. page name, keywords etc.-->
+    <meta charset="UTF-8">
+    <meta name="description" content="A website for the Theme Park built by Team 10 - Group 87">
+    <meta name="keywords" content="theme park, parade, roller coaster, show, entertainment"> 
+    
+    <!--OGP metadata-->
+    <meta property="og:url" content="https://www.team10themepark.io/en/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Theme Park - Home">
+    <meta property="og:description" content="A website for the Theme Park built by Team 10 - Group 87">
+    <meta property="og:site_name" content="Team 10 Theme Park">
+    <meta property="og:image" content="TBD">
+</head>
+
+<body>
+    <!--global header area-->
+    <div class="g-header">
+        <div class="g-header__container">
+            <!--Theme Park logo. Can be switched with theme park name as text-->
+            <div class="g-header__logo">
+                <a href="/en/">
+                    <img class="g-header__logoImg" src="images/common/logo.png" alt="Theme Park Logo">
+                </a>
+            </div>
+            <!--dynamic image slider. For an example, see https://www.yomiuriland.com/en/-->
+            <div class="g-hero">
+                <div class="g-slider">
+                    <div class="g-slider__items slick-initialized slick-slider slick-dotted">
+                        <div class="g-slider__item slick-slide" id="slick-slide-00" style data-slick-index="0">
+                            <img src="/multi-data/images/top/news1.jpg" alt="News">
+                            <p class="g-slider__title">News</p>
+                            <p class="g-slider__text">News content</p>
+                        </div>
+                        <div class="g-slider__item slick-slide" id="slick-slide-01" style data-slick-index="1">
+                            <img src="/multi-data/images/top/news2.jpg" alt="Notices">
+                            <p class="g-slider__title">Notices</p>
+                            <p class="g-slider__text">Notice content</p>
+                        </div>          
+                        <div class="g-slider__item slick-slide" id="slick-slide-02" style data-slick-index="2">
+                            <img src="/multi-data/images/top/news3.jpg" alt="Updates">
+                            <p class="g-slider__text">Updates!</p>
+                            <p class="g-slider__period">Update content</p>
+                        </div>
+                    </div>
+                    <div class="g-slider__nav">
+                        <button class="slick-prev slick-arrow" type="button" aria-label="Previous" style>
+                            "Previous"
+                        </button>
+                        <button class="slick-next slick-arrow" type="button" aria-label="Next" style>
+                            "Next"
+                        </button>
+                        <ul class="slick-dots" style role="tablist">
+                            <li role="presentation">
+                                <button type="button" role="tab" id="slick-slide-control00" aria-controls="slick-slide-00" aria-label="1 of 3" tabindex="-1">1</button>
+                            </li>
+                            <li role="presentation">
+                                <button type="button" role="tab" id="slick-slide-control01" aria-controls="slick-slide-01" aria-label="2 of 3" tabindex="-1">1</button>
+                            </li>
+                            <li role="presentation">
+                                <button type="button" role="tab" id="slick-slide-control02" aria-controls="slick-slide-02" aria-label="3 of 3" tabindex="-1">1</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--global navigation bar-->
+    <nav class="gnavi">
+        <div class="gnavi-container">
+            <button class="NaviButton" id="BookingNavi">
+                <span class="HotelBooking"></span>
+                <span class="ParkBooking"></span>
+            </button>
+            <button class="NaviButton" id="Page2Navi"></button>
+            <button class="NaviButton" id="Page3Navi"></button>
+        </div>
+    </nav>
+    <!--Promo space. Assumption is all are static images. Can change to dynamic links-->
+    <div class="promo-space" style>
+        <div class="promo-space__container-top">
+            <div class="promo1"><img class="promo-img-top" src="/multi-data//images/page1/promo1.jpg" alt=""></div>
+            <div class="promo2"><img class="promo-img-top" src="/multi-data//images/page1/promo2.jpg" alt=""></div>
+            <div class="promo3"><img class="promo-img-top" src="/multi-data//images/page1/promo3.jpg" alt=""></div>
+        </div>
+        <div class="promo-space__container-bottom">
+            <div class="promo4"><img class="promo-img-top" src="/multi-data//images/page1/promo4.jpg" alt=""></div>
+        </div>
+    </div>
+</body>
+
+</html>
